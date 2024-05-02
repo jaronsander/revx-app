@@ -1,6 +1,7 @@
 // /pages/_document.js
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { MenuBar } from '../components/MenuBar';
 class MyDocument extends Document {
   render() {
     return (
@@ -12,6 +13,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
+          <MenuBar />
           <Main />
           <NextScript />
         </body>
